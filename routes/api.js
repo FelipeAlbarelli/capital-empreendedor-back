@@ -5,13 +5,9 @@ const {updateOpp , createOpp , saveOppList} = require('../database/models');
 
 const router = express.Router();
 
-router.get('/test' , async (req, res) => {
-    try {
-        res.send(await db.getAll('opportunities'))
-    } catch (e){
-
-    }
-})
+// Routes usam middlewares para fazer as operações
+// Obs : updateOpp não é funcional, i.e., funciona alterando a lista que é parametro
+//       req.opp é elemento de req.oppList, portanto alterações no primeiro afetam o segundo  
 
 // read all users
 router.get('/users' , async (req , res) => {
@@ -25,7 +21,7 @@ router.get('/users' , async (req , res) => {
     }
 })
 
-// read user
+// read user info
 router.get('/user/:userEmail/info' , findUser , (req , res) => {
     res.send(req.user)
 })
