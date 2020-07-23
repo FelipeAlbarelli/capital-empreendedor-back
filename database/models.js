@@ -7,7 +7,8 @@ const db = require('./functions')
 // garante que banco de dados não tenha objs fora da estrutura padrão
 const updateOpp = (oldOpp , updates) => {
     for (k in oldOpp){
-        oldOpp[k] = updates[k] || oldOpp[k];
+        // truque com || causa erros ao substituir valores booleanos
+        oldOpp[k] = updates[k] === undefined ? oldOpp[k] : updates[k];
     }
 }
 

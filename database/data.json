@@ -45,18 +45,39 @@
     "cliente1@example.com": {
       "opportunities": [
         {
-          "name": "Instituição 34",
+          "name": "inst 95",
           "limit": "12121212",
-          "interest": 3e-8,
+          "interest": 0,
           "term": "1",
           "isActive": true
         },
         {
           "name": "teste",
           "limit": "1",
-          "interest": 0.02,
+          "interest": 2e-18,
           "term": "3",
           "isActive": true
+        },
+        {
+          "name": "unicamp",
+          "limit": "100",
+          "interest": 0.1,
+          "term": "2",
+          "isActive": true
+        },
+        {
+          "name": "unicap",
+          "limit": "10",
+          "interest": 0.01,
+          "term": "2",
+          "isActive": true
+        },
+        {
+          "name": "1",
+          "limit": 0,
+          "interest": 0,
+          "term": 0,
+          "isActive": false
         }
       ]
     },
