@@ -49,7 +49,7 @@
           "limit": "12121212",
           "interest": 0,
           "term": "1",
-          "isActive": true
+          "isActive": false
         },
         {
           "name": "teste",
@@ -71,13 +71,6 @@
           "interest": 0.01,
           "term": "2",
           "isActive": true
-        },
-        {
-          "name": "1",
-          "limit": 0,
-          "interest": 0,
-          "term": 0,
-          "isActive": false
         }
       ]
     },
